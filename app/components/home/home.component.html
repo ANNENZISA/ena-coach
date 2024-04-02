@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ENA Coach</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="./assets/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="/home" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <div class="col-6 text-end">
+                             <img class="logo-container" src=".\assets\img\logo.png">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                        <div class="col-lg-7 px-5 text-start">
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                                <i class="fa fa-envelope text-primary me-2"></i>
+                                <p class="mb-0">email</p>
+                            </div>
+                            <div class="h-100 d-inline-flex align-items-center py-2">
+                                <i class="fa fa-phone-alt text-primary me-2"></i>
+                                <p class="mb-0">phone number</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 px-5 text-end">
+                           <div class="d-inline-flex align-items-center py-2">
+                                <a class="me-3" href="https://www.facebook.com/MyEnaCoach"><i class="fab fa-facebook-f"></i></a>
+                                <a class="me-3" href="https://twitter.com/EnaCoach"><i class="fab fa-twitter"></i></a>
+                                <a class="me-3" href="https://www.instagram.com/EnaCoach/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                      <a href="/home" class="navbar-brand d-block d-lg-none">
+                          <div class="col-6 text-end">
+                              <img class="logo-container" src=".\assets\img\logo.png">
+                          </div>
+                      </a>
+                      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                  <div class="navbar-nav mr-auto py-0">
+                                     <!-- Home, About us, Contact us, Print ticket, Gallery links -->
+                                     <a href="/home" hrefActive="active" ariaCurrentWhenActive="page">Home</a>
+                                     <a href="/about" hrefActive="active" ariaCurrentWhenActive="page">About us</a>
+                                     <a href="/contact" hrefActive="active" ariaCurrentWhenActive="page">Contact us</a>
+                                     <a href="/ticket" hrefActive="active" ariaCurrentWhenActive="page">Print ticket</a>
+                                     <a href="/gallery" hrefActive="active" ariaCurrentWhenActive="page">Gallery</a>
+
+                                     <!-- Dropdown for sign in and register -->
+                                    <div class="nav-item dropdown active">
+                                    <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">
+                                    sign in\register
+                                     </a>
+                                   <div class="dropdown-menu rounded-0 m-0">
+                                   <!-- sign in and register links inside the dropdown -->
+                                  <a href="/login" class="dropdown-item active ">sign in</a>
+                                  <a href="/reg" class="dropdown-item active">register</a>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+
+                      </div>
+                  </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Carousel Start -->
+
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(./assets/img/carousel-1.jpg);">
+            <div class="container-fluid page-header-inner py-5">
+                <div class="container text-center pb-5">
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">WELCOME TO</h6>
+                                <h1 class="display-3 text-white mb-4 animated slideInDown">ENA Coach</h1>
+                                <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Contact Us</a>
+                                <a href="ticket.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Print ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+        <!-- Carousel End -->
+
+
+        <!-- Booking Start -->
+
+        <!-- Booking End -->
+<div class="container-fluid booking pb-5">
+    <div class="container">
+        <div class="bg-white shadow" style="padding: 35px;">
+            <div class="row g-2">
+                <div class="col-md-10">
+                    <div class="row g-2">
+                       <div class="col-md-3">
+                            <label for="to">From:</label>
+                            <select id="to" name="to" class="form-control">
+                <option value="Ahero">Ahero</option>
+				<option value="Akala">Akala</option>
+                <option value="Awasi">Awasi</option>
+				<option value="Awendo">Awendo</option>
+                <option value="Birongo">Birongo</option>
+				<option value="Bomet">Bomet</option>
+                <option value="Bondo">Bondo</option>
+				<option value="Bumala">Bumala</option>
+                <option value="Bungoma">Bungoma</option>
+				<option value="Busia">Busia</option>
+                <option value="Chavakali">Chavakali</option>
+				<option value="Chepilat">Chepilat</option>
+                <option value="Ekerenyo">Ekerenyo</option>
+				<option value="Funyula">Funyula</option>
+                <option value="Homabay">Homabay</option>
+				<option value="Ikonge">Ikonge</option>
+                <option value="Kadongo">Kadongo</option>
+				<option value="Kaimosi">Kaimosi</option>
+                <option value="Kakamega">Kakamega</option>
+				<option value="Kapsabet">Kapsabet</option>
+                <option value="Katito">Katito</option>
+				<option value="Kebirigo">Kebirigo</option>
+                <option value="Kegogi">Kegogi</option>
+				<option value="Kehancha">Kehancha</option>
+                <option value="Kemera">Kemera</option>
+				<option value="Kendubay">Kendubay</option>
+                <option value="Kenyenya">Kenyenya</option>
+				<option value="Kericho">Kericho</option>
+                <option value="Keroka">Keroka</option>
+				<option value="Keumbu">Keumbu</option>
+                <option value="Khayeg">Khayega</option>
+				<option value="Kijauri">Kijauri</option>
+                <option value="Kisii">Kisii</option>
+				<option value="Kisumu">Kisumu</option>
+                <option value="Kitui">Kitui</option>
+				<option value="Kodiaga">Kodiaga</option>
+                <option value="Kolweny">Kolweny</option>
+				<option value="Kombewa">Kombewa</option>
+                <option value="Luanda">Luanda</option>
+				<option value="Majengo">Majengo</option>
+                <option value="Maseno">Maseno</option>
+				<option value="Mavueni">Mavueni</option>
+                <option value="Mbale">Mbale</option>
+				<option value="Mbita">Mbita</option>
+                <option value="Migori">Migori</option>
+				<option value="Mombasa">Mombasa</option>
+                <option value="Mtito Andei">Mtito Andei</option>
+				<option value="Mumias">Mumias</option>
+                <option value="nairobi">Nairobi</option>
+				<option value="Naivasha">Naivasha</option>
+                <option value="Nakuru">Nakuru</option>
+				<option value="Nambale">Nambale</option>
+                <option value="Narok">Narok</option>
+				<option value="Ndhiwa">Ndhiwa</option>
+				<option value="Ndori">Ndori</option>
+                <option value="Ngiya">Ngiya</option>
+				<option value="Nyachenge">Nyachenge</option>
+                <option value="Nyadorera">Nyadorera</option>
+				<option value="Nyakoe">Nyakoe</option>
+                <option value="Nyamira">Nyamira</option>
+                <option value="Nyangusu">Nyangusu</option>
+				<option value="Oyugis">Oyugis</option>
+                <option value="Port Victoria">Port Victoria</option>
+				<option value="Rangwe">Rangwe</option>
+                <option value="Rodi">Rodi</option>
+				<option value="Rongo">Rongo</option>
+                <option value="Siaya">Siaya</option>
+				<option value="Sio Port">Sio Port</option>
+                <option value="Sirarei">Sirare</option>
+				<option value="Sondu">Sondu</option>
+                <option value="Sori">Sori</option>
+				<option value="Sotik">Sotik</option>
+                <option value="Suneka">Suneka</option>
+				<option value="Ugunja">Ugunja</option>
+                <option value="Usenge">Usenge</option>
+				<option value="Voi">Voi</option>
+                <option value="Yala">Yala</option>
+                <!-- Add more options for other locations -->
+            </select>
+        </div>
+                       <div class="col-md-3">
+                            <label for="to">To:</label>
+                            <select id="to" name="to" class="form-control">
+                <option value="Ahero">Ahero</option>
+				<option value="Akala">Akala</option>
+                <option value="Awasi">Awasi</option>
+				<option value="Awendo">Awendo</option>
+                <option value="Birongo">Birongo</option>
+				<option value="Bomet">Bomet</option>
+                <option value="Bondo">Bondo</option>
+				<option value="Bumala">Bumala</option>
+                <option value="Bungoma">Bungoma</option>
+				<option value="Busia">Busia</option>
+                <option value="Chavakali">Chavakali</option>
+				<option value="Chepilat">Chepilat</option>
+                <option value="Ekerenyo">Ekerenyo</option>
+				<option value="Funyula">Funyula</option>
+                <option value="Homabay">Homabay</option>
+				<option value="Ikonge">Ikonge</option>
+                <option value="Kadongo">Kadongo</option>
+				<option value="Kaimosi">Kaimosi</option>
+                <option value="Kakamega">Kakamega</option>
+				<option value="Kapsabet">Kapsabet</option>
+                <option value="Katito">Katito</option>
+				<option value="Kebirigo">Kebirigo</option>
+                <option value="Kegogi">Kegogi</option>
+				<option value="Kehancha">Kehancha</option>
+                <option value="Kemera">Kemera</option>
+				<option value="Kendubay">Kendubay</option>
+                <option value="Kenyenya">Kenyenya</option>
+				<option value="Kericho">Kericho</option>
+                <option value="Keroka">Keroka</option>
+				<option value="Keumbu">Keumbu</option>
+                <option value="Khayeg">Khayega</option>
+				<option value="Kijauri">Kijauri</option>
+                <option value="Kisii">Kisii</option>
+				<option value="Kisumu">Kisumu</option>
+                <option value="Kitui">Kitui</option>
+				<option value="Kodiaga">Kodiaga</option>
+                <option value="Kolweny">Kolweny</option>
+				<option value="Kombewa">Kombewa</option>
+                <option value="Luanda">Luanda</option>
+				<option value="Majengo">Majengo</option>
+                <option value="Maseno">Maseno</option>
+				<option value="Mavueni">Mavueni</option>
+                <option value="Mbale">Mbale</option>
+				<option value="Mbita">Mbita</option>
+                <option value="Migori">Migori</option>
+				<option value="Mombasa">Mombasa</option>
+                <option value="Mtito Andei">Mtito Andei</option>
+				<option value="Mumias">Mumias</option>
+                <option value="nairobi">Nairobi</option>
+				<option value="Naivasha">Naivasha</option>
+                <option value="Nakuru">Nakuru</option>
+				<option value="Nambale">Nambale</option>
+                <option value="Narok">Narok</option>
+				<option value="Ndhiwa">Ndhiwa</option>
+				<option value="Ndori">Ndori</option>
+                <option value="Ngiya">Ngiya</option>
+				<option value="Nyachenge">Nyachenge</option>
+                <option value="Nyadorera">Nyadorera</option>
+				<option value="Nyakoe">Nyakoe</option>
+                <option value="Nyamira">Nyamira</option>
+                <option value="Nyangusu">Nyangusu</option>
+				<option value="Oyugis">Oyugis</option>
+                <option value="Port Victoria">Port Victoria</option>
+				<option value="Rangwe">Rangwe</option>
+                <option value="Rodi">Rodi</option>
+				<option value="Rongo">Rongo</option>
+                <option value="Siaya">Siaya</option>
+				<option value="Sio Port">Sio Port</option>
+                <option value="Sirarei">Sirare</option>
+				<option value="Sondu">Sondu</option>
+                <option value="Sori">Sori</option>
+				<option value="Sotik">Sotik</option>
+                <option value="Suneka">Suneka</option>
+				<option value="Ugunja">Ugunja</option>
+                <option value="Usenge">Usenge</option>
+				<option value="Voi">Voi</option>
+                <option value="Yala">Yala</option>
+                <!-- Add more options for other locations -->
+            </select>
+        </div>
+                        <div class="col-md-3">
+                            <label for="travelers">Number of Travelers:</label>
+                            <input type="number" id="travelers" name="travelers" class="form-control" min="1" value="1">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="date">Travel Date:</label>
+                            <input type="date" id="date" name="date" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-dark">Search Buses</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h6 class="section-title text-start text-primary text-uppercase">Why Book With Us?</h6>
+                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">ENA Coach</span></h1>
+						<p>YOUR COMFORT IS OUR PRIORITY<p>
+                        <p class="mb-4">We have the most comfortable buses on the kenyan roads with lots of legroom to ensure that you reach your destination fully relaxed.</p>
+						<p>WE OFFER A WIDE RANGE OF PAYMENT OPTIONS<p>
+                        <p class="mb-4">We have introduced several options to book from the comfort of your home or from whichever location you are, e.g Lipa Na Mpesa, online booking..</p>
+						<p>SPECIAL AMENITIES<p>
+                        <p class="mb-4">Our buses are fitted with high speed internet connection via wifi and power outlets to charge your devices on the go.</p>
+
+                        <div class="row g-3 pb-4">
+                            <div class="row-cols-sm-4">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-bus fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">20</h2>
+                                        <p class="mb-0">FLEET</p>
+										<p class="mb-0">comfortable and spacious buses and vans</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users -cog fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">100</h2>
+                                        <p class="mb-0">Staff</p>
+										<p class="mb-0">our staff are the best at serving.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">100</h2>
+                                        <p class="mb-0">Clients</p>
+										<p class="mb-0">our clients are always satisfied.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100" src="./assets/img/about-1.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100" src="./assets/img/about-2.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100" src="./assets/img/about-3.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Fleet Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our fleet</h6>
+                    <h1 class="mb-5">Explore Our<span class="text-primary text-uppercase">fleet</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="./assets/img/room-1-Copy.jpg" alt="">
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">11 seater vans</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bus text-primary me-2"></i>11 seater</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bulb text-primary me-2"></i>charging port</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Our 11 seater vans have wifi, a charging port and enough leg room..</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="./assets/img/room-2-Copy.jpg" alt="">
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Buses</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bus text-primary me-2"></i>spacious</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bulb text-primary me-2"></i>charging port</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Our buses are spacious.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="./assets/img/room-3-Copy.jpg" alt="">
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Courier service</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bus text-primary me-2"></i>spacious</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-box text-primary me-2"></i>efficient</small>
+                                </div>
+                                <p class="text-body mb-3">Our courier service is efficient.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fleet End -->
+
+
+       <!-- Routes Start -->
+                <div>
+                    <img class="img-fluid" src="./assets/img/njia.jpg" alt="">
+                </div>
+<!-- Routes End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
+                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-box fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">courier services</h5>
+                            <p class="text-body mb-0">Be sure that your goods will get there on time.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-bus fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">passanger transportation</h5>
+                            <p class="text-body mb-0">With the help of our friendly staff and efficient fleet, be sure to get to your destination safely and well served.</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+<div>
+    <a href="https://play.google.com/store/apps/details?id=com.enacoach">
+        <img class="icon-img" src="./assets/img/logo-2.jpg" alt="">
+    </a>
+    <a href="https://voltic-africa.com/">
+        <img class="icon-img" src="./assets/img/logo-3.png" alt="">
+    </a>
+</div>
+
+        <!-- Footer Start -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <p>&copy;Copyright 2024.</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <a href="terms.html" class="text-white me-4">Privacy Policy|Terms and Conditions</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-unstyled">
+                <li><a href="/home" hrefActive="active" ariaCurrentWhenActive="page">Home</a></li>
+                <li><a href="/about" class="nav-item nav-link">About us</a></li>
+                <li><a href="/contact" class="nav-item nav-link">Contact us</a></li>
+                <li><a href="/ticket" class="nav-item nav-link">Print ticket</a></li>
+                <li><a href="/gallery" class="nav-item nav-link">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/lib/easing/easing.min.js"></script>
+    <script src="./assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="./assets/lib/counterup/counterup.min.js"></script>
+    <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./assets/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="./assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="./assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
